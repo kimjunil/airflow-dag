@@ -62,7 +62,6 @@ if k8s:
         def start_task():
             print_stuff()
 
-        # [START task_with_volume]
         executor_config_volume_mount = {
             "pod_override": k8s.V1Pod(
                 spec=k8s.V1PodSpec(
